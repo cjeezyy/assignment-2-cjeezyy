@@ -45,7 +45,7 @@ int mdadm_unmount(void) {
 }
 
 int mdadm_read(uint32_t start_addr, uint32_t read_len, uint8_t *read_buf)  {
-  uint32_t disk_num;
+  /* uint32_t disk_num;
   uint32_t block_num;
   uint32_t disk_offset;
   uint32_t current_Addr = start_addr;
@@ -187,7 +187,7 @@ int mdadm_read(uint32_t start_addr, uint32_t read_len, uint8_t *read_buf)  {
 
     return len;
   }      
-
+  */
   return -1;
 }
 
