@@ -53,7 +53,7 @@ int mdadm_read(uint32_t start_addr, uint32_t read_len, uint8_t *read_buf)  {
   if (mount_count == 0) {return -3;} //if disk is unmounted fail
 
   //0-length read should succeed with a NULL pointer
-  if (len == 0 && read_buf == NULL) {return 1;}
+  if (len == 0 && read_buf == NULL) {return 0;}
    
   // Check for valid read length
   if (len == 0 || len > 1024) {return -2;}
